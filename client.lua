@@ -55,3 +55,15 @@ RegisterCommand('spawncar', function(source, args, rawCommand)
         CreateVehicle(vehiclehash, x, y, z, GetEntityHeading(PlayerPedId())+90, 1, 0)
     end)
 end)
+
+TriggerEvent('chat:addSuggestion', '/giveweapon', 'Give weapon command.', {
+    { name="weapon_key", help="Example: weapon_pistol" }
+})
+
+TriggerEvent('chat:addSuggestion', '/setmodel', 'Set model command.', {
+    { name="ped_key", help="Example: csb_ballasog" }
+})
+
+TriggerEvent('chat:addSuggestion', '/spawncar', 'Spawn car command.', {
+    { name="car_key", help="Example: buzzard2" }
+})
